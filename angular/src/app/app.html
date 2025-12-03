@@ -1,0 +1,11 @@
+<h2>Lista della Spesa</h2>
+<input
+[(ngModel)]="nuovoElemento"
+placeholder="Aggiungi..."
+>
+<button (click)="aggiungi()">Aggiungi</button>
+<ul>
+<li *ngFor="let item of lista">
+{{ item.id }} - {{ item.elemento }}
+</li>
+</ul>
